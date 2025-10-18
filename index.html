@@ -5,24 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <script src="https://cdn.jsdelivr.net/gh/faisalalmail/Screen-Width-Viewer@main/ScreenWidthViewer.js" defer></script>
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
 <header>
 <div><p class="logo">adamkeyes</p></div>
 <div class="socials">
-<img src="assets/images/icon-github.svg">
-<img src="assets/images/icon-frontend-mentor.svg">
-<img src="assets/images/icon-linkedin.svg">
-<img src="assets/images/icon-twitter.svg">
+<img src="images/icon-github.svg">
+<img src="images/icon-frontend-mentor.svg">
+<img src="images/icon-linkedin.svg">
+<img src="images/icon-twitter.svg">
 
 </div>
 
 </header>
 <main>
   <div class="hero">
-    <img src="assets/images/image-profile-mobile.webp">
+
+    <picture>
+      <source srcset="images/image-profile-desktop.webp" media="(width >= 1024px)" />
+    <source srcset="images/image-profile-tablet.webp" media="(width >= 600px)" />
+  <img src="images/image-profile-mobile.webp" alt="Profile picture" class="profile-picture" />
+</picture>
+
+
+
   <h1>Nice to meet you! I'm Adam Keyes.</h1>
 
   <p>Based in the UK, I'm a front-end developer passionate about 

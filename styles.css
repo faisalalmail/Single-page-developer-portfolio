@@ -23,6 +23,21 @@
 
 }
 
+/* Utility classes */
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
 html{
     background: hsl(var(--black));
     color: white;
@@ -30,13 +45,20 @@ html{
     padding-right: 1rem;
 }
 
+body{
+    position: relative;
+}
+
 header{
+    position: absolute;
+    margin: auto;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap:1.25rem;
     align-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .logo{
@@ -47,4 +69,9 @@ header{
 .socials{
     display: flex;
     gap: 1.5rem;
+}
+
+.profile-picture{
+    width: 11rem;
+    margin: auto;
 }
