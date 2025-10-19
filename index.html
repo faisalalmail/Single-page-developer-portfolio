@@ -22,88 +22,161 @@
 </header>
 <main>
   <div class="hero">
-
+    <div class="hero-img-div">
     <picture>
       <source srcset="images/image-profile-desktop.webp" media="(width >= 1024px)" />
     <source srcset="images/image-profile-tablet.webp" media="(width >= 600px)" />
   <img src="images/image-profile-mobile.webp" alt="Profile picture" class="profile-picture" />
 </picture>
+    </div>
+<div class="hero-text-div">
+  <h1>Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
 
-
-
-  <h1>Nice to meet you! I'm Adam Keyes.</h1>
-
-  <p>Based in the UK, I'm a front-end developer passionate about 
+  <p class="hero-text">Based in the UK, I'm a front-end developer passionate about 
   building accessible web apps that users love.</p>
 
-  Contact me
+  <button>Contact me</button>
   </div>
+  </div>
+
+
+  <hr>
+  <section class="experiences">
+    <div class="expereince">
   <h2>HTML</h2>
   <p>4 Years Experience</p>
-
+    </div>
+    <div class="expereince">
   <h2>CSS</h2>
   <p>4 Years Experience</p>
-
+    </div>
+    <div class="expereince">
   <h2>JavaScript</h2>
   <p>4 Years Experience</p>
-
+    </div>
+    <div class="expereince">
   <h2>Accessibility</h2>
   <p>4 Years Experience</p>
-
+    </div>
+    <div class="expereince">
   <h2>React</h2>
   <p>3 Years Experience</p>
-
+    </div>
+    <div class="expereince">
   <h2>Sass</h2>
   <p>3 Years Experience</p>
+    </div>
+  </section>
+<hr>
+<section class="projects">
+  <div class="projects-head">
+  <h1>Projects</h1>
 
-  Projects
+  <button>Contact me</button>
+</div>
+<div class="projects-grid">
+<div class="project">
+<picture>
+  <source srcset="images/thumbnail-project-1-large.webp" media="(width >= 1024px)" />
+  <img src="images/thumbnail-project-1-small.webp" class="project-img" alt="project image">
+</picture>
+  <div class="project-title">Design portfolio</div>
+  <div class="langs">HTML CSS</div>
+  <div class="view-buttons">
+  <button>View project</button>
+  <button>View code</button>
+  </div>
+</div>
 
-  Contact me
+<div class="project">
+  <picture>
+  <source srcset="images/thumbnail-project-2-large.webp" media="(width >= 1024px)" />
+  <img src="images/thumbnail-project-2-small.webp" class="project-img" alt="project image">
+</picture>
+  <div class="project-title">E-learning landing page</div>
+  <div class="langs"><p>HTML</p> <p>CSS</p></div>
+  <div class="view-buttons">
+  <button>View project</button>
+  <button>View code</button>
+  </div>
+</div>
 
-  Design portfolio
-  HTML CSS
-  View project
-  View code
+<div class="project">
+<picture>
+  <source srcset="images/thumbnail-project-3-large.webp" media="(width >= 1024px)" />
+  <img src="images/thumbnail-project-3-small.webp" class="project-img" alt="project image">
+</picture>
+  <div class="project-title">Todo web app</div>
+  <div class="langs"><p>HTML</p> <p>CSS</p> <p>JavaScript</p></div>
+  <div class="view-buttons">
+  <button>View project</button>
+  <button>View code</button>
+  </div>
+</div>
 
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
+<div class="project">
+  <picture>
+  <source srcset="images/thumbnail-project-4-large.webp" media="(width >= 1024px)" />
+  <img src="images/thumbnail-project-4-small.webp" class="project-img" alt="project image">
+</picture>
+  <div class="project-title">Entertainment web app</div>
+  <div class="langs"><p>HTML</p> <p>CSS</p> <p>JavaScript</p></div>
+  <div class="view-buttons">
+  <button>View project</button>
+  <button>View code</button>
+  </div>
+</div>
 
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
+<div class="project">
+  <picture>
+  <source srcset="images/thumbnail-project-5-large.webp" media="(width >= 1024px)" />
+  <img src="images/thumbnail-project-5-small.webp" class="project-img" alt="project image">
+</picture>
+  <div class="project-title">Memory Game</div>
+  <div class="langs"><p>HTML</p> <p>CSS</p> <p>JavaScript</p></div>
+  <div class="view-buttons">
+  <button>View project</button>
+  <button>View code</button>
+  </div>
+</div>
 
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-
+<div class="project">
+  <picture>
+  <source srcset="images/thumbnail-project-6-large.webp" media="(width >= 1024px)" />
+  <img src="images/thumbnail-project-6-small.webp" class="project-img" alt="project image">
+</picture>
+  <div class="project-title">Art gallery showcase</div>
+  <div class="langs"><p>HTML</p> <p>CSS</p> <p>JavaScript</p></div>
+  <div class="view-buttons">
+  <button>View project</button>
+  <button>View code</button>
+  </div>
+</div>
+</div>
+</section>
   </main>
   <footer>
-  Contact
+  <h1>Contact</h1>
 
-  I would love to hear about your project and how I could help. Please 
-  fill in the form, and I’ll get back to you as soon as possible.
+  <p>I would love to hear about your project and how I could help. Please 
+  fill in the form, and I’ll get back to you as soon as possible.</p>
+<form>
+  <input type="text" name="name" id="name" placeholder="NAME">
+  <input type="email" name="email" id="email" placeholder="EMAIL">
+  <textarea placeholder="MESSAGE"></textarea>
 
-  Name
-  Email
-  Message
-
-  Send message
-
+  <button>Send message</button>
+</form>
+<hr>
+<div class="foot">
 <p class="logo">adamkeyes</p>
+<div class="socials">
+<img src="images/icon-github.svg">
+<img src="images/icon-frontend-mentor.svg">
+<img src="images/icon-linkedin.svg">
+<img src="images/icon-twitter.svg">
+</div>
+</div>
   </footer>
 </body>
 </html>

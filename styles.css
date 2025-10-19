@@ -33,16 +33,30 @@
 }
 
 
+.hero-text{
+    color: hsl(var(--light));
+    line-height: 26px;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
 
+h1{
+    font-size: 2.5rem;
+}
 
-
-
+p{
+    color: hsl(var(--light));
+    line-height: 26px;
+    text-align: center;
+}
 
 html{
     background: hsl(var(--black));
     color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
+}
+main{
+
 }
 
 body{
@@ -59,6 +73,7 @@ header{
     align-content: center;
     align-items: center;
     width: 100%;
+    
 }
 
 .logo{
@@ -69,9 +84,192 @@ header{
 .socials{
     display: flex;
     gap: 1.5rem;
+    justify-content: space-between;
+    max-width: 60%;
+    align-self: center;
+}
+
+.socials img{
+    height: 20px;
 }
 
 .profile-picture{
     width: 11rem;
     margin: auto;
+    align-self: center;
+
+}
+
+.hero-img-div,.hero-text-div{
+    text-align: center;
+}
+
+h1 span{
+    position: relative;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h1 span::after{
+    width: 100%;
+    height: 4px;
+    content: "";
+    background-color: hsl(var(--green));
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+
+}
+
+.hero{
+            padding-left: 1rem;
+        padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    background-image: url(images/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position: 200% 8rem;
+}
+button{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.29px;
+    line-height: 26px;
+    padding-bottom: 0.625rem;
+    color: inherit;
+    border: none;
+    border-bottom: 2px solid hsl(var(--green));
+    background:none;
+
+}
+
+.experiences{
+            padding-left: 1rem;
+        padding-right: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1.5rem;
+
+}
+
+.expereince{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+
+footer{
+    background: hsl(var(--dark));
+    padding-left: 1rem;
+        padding-right: 1rem;
+
+    padding-top: 4rem;
+    text-align: center;
+    background-image: url(images/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position: 230% 30rem;
+}
+
+
+form{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+input,textarea{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    display: block;
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+textarea{
+    height: 7rem;
+}
+
+hr{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+form button{
+    left: 0;
+    margin-right: 0;
+    align-self: auto;
+}
+
+.projects{
+            padding-left: 1rem;
+        padding-right: 1rem;
+ margin-top: 4rem;
+ margin-bottom: 5rem;
+}
+
+.projects-grid{
+
+     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 2.5rem;
+
+
+}
+
+.projects-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.project-title{
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: var(--heading-m);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project-img{
+    width: 100%;
+}
+
+.view-buttons{
+    margin-top: 1.25rem;
+    display: flex;
+    gap:2rem;
+}
+
+.langs{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.125rem;
+    font-weight: medium;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
+.foot{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    align-content: center;
 }
