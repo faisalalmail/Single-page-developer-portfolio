@@ -185,6 +185,7 @@ footer{
 form{
     margin-top: 3rem;
     margin-bottom: 5rem;
+    
 }
 
 input,textarea{
@@ -197,6 +198,11 @@ input,textarea{
     margin-bottom: 2rem;
     font-weight: bold;
     font-size: 1rem;
+    color: white;
+}
+
+input:focus,textarea:focus{
+    outline: 0;
 }
 
 textarea{
@@ -209,9 +215,11 @@ hr{
 }
 
 form button{
-    left: 0;
+
+        display: block;
+    margin-left: auto;
     margin-right: 0;
-    align-self: auto;
+    
 }
 
 .projects{

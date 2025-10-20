@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <script src="https://cdn.jsdelivr.net/gh/faisalalmail/Screen-Width-Viewer@main/ScreenWidthViewer.js" defer></script>
+  <script src="index.js" defer></script>
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
@@ -160,10 +161,10 @@
 
   <p>I would love to hear about your project and how I could help. Please 
   fill in the form, and I’ll get back to you as soon as possible.</p>
-<form>
+<form id="contact-form">
   <input type="text" name="name" id="name" placeholder="NAME">
-  <input type="email" name="email" id="email" placeholder="EMAIL">
-  <textarea placeholder="MESSAGE"></textarea>
+  <input type="text" name="email" id="email" placeholder="EMAIL">
+  <textarea placeholder="MESSAGE" name="message" id="message"></textarea>
 
   <button>Send message</button>
 </form>
