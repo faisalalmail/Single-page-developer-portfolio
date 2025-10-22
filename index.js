@@ -7,12 +7,6 @@ const contactForm = document.getElementById("contact-form")
 
 
 
-
-
-
-
-
-
 contactForm.addEventListener("submit", function (e){
     e.preventDefault()
 
@@ -25,13 +19,16 @@ contactForm.addEventListener("submit", function (e){
         message: e.target.message.value
     }
 
-    fetch("http://localhost:3000/save", { method: 'POST',
+    fetch("http://localhost:3000/save")
+    .then(res => console.log(res.headers))
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
+})
+        
+/*         , { method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(formData)});
-    })
+        body: JSON.stringify(formData)}); */
+  /*   }) */
 /*     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.error(err)) */
-
-    
-

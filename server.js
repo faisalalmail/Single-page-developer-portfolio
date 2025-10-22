@@ -1,29 +1,26 @@
-const express = require('express');
-const cors = require('cors');
-const app = express();
-app.use(cors());
+import http from 'node:http'
+import cors from 'cors'
+const PORT = 3000
+
+const corsMiddleware = cors({
+        origin: '*', // or 'http://example.com' or a function to allow specific origins
+    methods: ['GET','POST','OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: false, // if you need cookies/auth
+})
+
+const server = http.createServer((req, res) =>{
+
+    corsMiddleware(req,res, ()=>{
+
+    
+    console.log("request arrived")
+    res.end("Hello from the local server")
+    })
+})
 
 
 
 
 
-app.post('/save', (req, res) => {
-    const data = req.body;
-    res.sendStatus(200).send("done")
-    console.log(req)
-    console.log(req.body)
-    console.log(JSON.parse(req.body))
-  
-/*     db.run(
-        'INSERT INTO submissions (name, phone, serverTime) VALUES (?, ?, ?)',
-        [data.name, data.Phone, data.serverTime],
-        function(err) {
-            if (err) return res.status(500).send('Database error');
-            
-        }
-    ); */
-});
-
-app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
-});
+server.listen(PORT, () => console.log(`Randevo on port: ${PORT}`))

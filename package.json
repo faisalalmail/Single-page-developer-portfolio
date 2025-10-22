@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "description": "A server to handle the data submitted through the contact form",
+  "homepage": "https://github.com/faisalalmail/Single-page-developer-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/faisalalmail/Single-page-developer-portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faisalalmail/Single-page-developer-portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Faisal Almail",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
