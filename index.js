@@ -19,8 +19,11 @@ contactForm.addEventListener("submit", function (e){
         message: e.target.message.value
     }
 
-    fetch("http://localhost:3000/save")
-    .then(res => console.log(res.headers))
+    fetch("http://localhost:3000/save", 
+        {method: 'POST', 
+        body: JSON.stringify(formData)
+    })
+    .then(res => console.log(res.body))
     .then(data => console.log(data))
     .catch(err => console.log(err))
 })

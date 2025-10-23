@@ -1,22 +1,44 @@
 import http from 'node:http'
-import cors from 'cors'
+
 const PORT = 3000
 
-const corsMiddleware = cors({
-        origin: '*', // or 'http://example.com' or a function to allow specific origins
-    methods: ['GET','POST','OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: false, // if you need cookies/auth
-})
 
 const server = http.createServer((req, res) =>{
+    const { method, url} = req;
 
-    corsMiddleware(req,res, ()=>{
+    console.log( method + url)
+    const { headers } = req;
+    const userAgent = headers['user-agent'];
+    console.log(userAgent)
+    let body = ''
+
+    req.on('data', chunk => {
+        console.log(chunk)
+        body += chunk.toString()})
+    req.on('end', () => { console.log('Body:', body); 
+        // Now you'll see "test"
+      res.end('Received: ' + body);
+    });
+
+
+/*     let body = [];
+    req.on('data', chunk => { body.push(chunk)})
+    .on('end', () => {body = Buffer.concat(body).toString()})
+    console.log(body + 'should be body')
+    req.on('error', err => console.error(err.stack)) */
+
+    
+    
+    //console.log(req)
+
+
 
     
     console.log("request arrived")
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Origin", "*")
     res.end("Hello from the local server")
-    })
+
 })
 
 
