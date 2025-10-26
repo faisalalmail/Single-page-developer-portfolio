@@ -41,8 +41,10 @@
     padding-bottom: 1.5rem;
 }
 
-h1{
+.big-text{
     font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
 }
 
 p{
@@ -61,6 +63,7 @@ main{
 
 body{
     position: relative;
+
 }
 
 header{
@@ -280,4 +283,97 @@ form button{
     flex-direction: column;
     gap:2rem;
     align-content: center;
+}
+
+@media  only screen and (min-width:768px){
+    header{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .logo{
+        font-size: 2rem;
+    }
+
+    .hero{
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+.profile-picture{
+    width: 20rem;
+}
+
+    .big-text{
+        font-size: 4.5rem;
+
+    }
+
+
+.hero-text-div{
+    padding-top: 8rem;
+    text-align: left;
+    margin-right: -7rem;
+    padding-left: 2rem;
+    z-index: 50;
+}
+.hero-text{
+    text-align: left;
+}
+
+
+.experiences{
+            padding-left: 2rem;
+        padding-right: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1.5rem;
+
+}
+
+
+hr{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h2{
+    font-size: var(--heading-l);
+}
+
+.expereince{
+    gap: 0.785rem;
+    text-align: left;
+}
+
+.expereince p{
+    text-align: left;
+}
+
+
+.projects-grid{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 2.375rem;
+    grid-row-gap: 3.75rem;
+
+
+}
+
+
+.projects{
+            padding-left: 2rem;
+        padding-right: 2rem;
+ margin-top: 4rem;
+ margin-bottom: 5rem;
+}
+
 }
