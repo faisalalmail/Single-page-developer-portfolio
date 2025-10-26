@@ -23,7 +23,7 @@ contactForm.addEventListener("submit", function (e){
         {method: 'POST', 
         body: JSON.stringify(formData)
     })
-    .then(res => console.log(res.body))
+    .then(res => res.text())
     .then(data => console.log(data))
     .catch(err => console.log(err))
 })
