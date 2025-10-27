@@ -66,6 +66,12 @@ body{
 
 }
 
+.logo-img{
+    height: 3rem;
+    object-fit: contain;
+    
+}
+
 header{
     position: absolute;
     margin: auto;
@@ -107,6 +113,8 @@ header{
     text-align: center;
 }
 
+
+
 h1 span{
     position: relative;
 }
@@ -136,7 +144,7 @@ h1 span::after{
     margin-bottom: 5rem;
     background-image: url(images/pattern-rings.svg);
     background-repeat: no-repeat;
-    background-position: 200% 8rem;
+    background-position: -20rem 8rem;
 }
 button{
     font-weight: bold;
@@ -161,6 +169,9 @@ button{
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 1.5rem;
+    background-image: url(images/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position: 12rem 25rem;
 
 }
 
@@ -181,7 +192,11 @@ footer{
     text-align: center;
     background-image: url(images/pattern-rings.svg);
     background-repeat: no-repeat;
-    background-position: 230% 30rem;
+    background-position: -23rem 30rem;
+}
+
+footer .big-text{
+    margin-bottom: 1rem;
 }
 
 
@@ -243,6 +258,8 @@ form button{
 
 }
 
+
+
 .projects-head{
     display: flex;
     justify-content: space-between;
@@ -281,7 +298,7 @@ form button{
     padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap:1rem;
     align-content: center;
 }
 
@@ -334,6 +351,7 @@ form button{
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 1.5rem;
+    background-position: 38rem 8rem;
 
 }
 
@@ -375,5 +393,50 @@ h2{
  margin-top: 4rem;
  margin-bottom: 5rem;
 }
+
+
+
+form{
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+footer .foot-text{
+    width: 60%;
+    margin: auto;
+}
+
+
+footer .big-text{
+    margin-bottom: 2rem;
+}
+
+footer hr{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.foot{
+/*     padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    align-content: center; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+
+
+}
+
+@media  only screen and (min-width:1440px){
+
+
 
 }
