@@ -63,6 +63,8 @@ main{
 
 body{
     position: relative;
+    max-width: 1200px;
+    margin: auto;
 
 }
 
@@ -98,7 +100,7 @@ header{
     align-self: center;
 }
 
-.socials img{
+.social-icon{
     height: 20px;
 }
 
@@ -156,7 +158,22 @@ button{
     border: none;
     border-bottom: 2px solid hsl(var(--green));
     background:none;
+    
 
+}
+
+button:hover{
+    cursor: pointer;
+    color: hsl(var(--green));
+}
+
+.social-icon{
+    filter: none;
+}
+
+.social-icon:hover{
+    cursor: pointer;
+filter: brightness(0) saturate(100%) invert(88%) sepia(50%) saturate(631%) hue-rotate(75deg) brightness(94%) contrast(88%);
 }
 
 .experiences{
@@ -232,6 +249,10 @@ hr{
     margin-right: 1rem;
 }
 
+footer hr{
+    margin: 0;
+}
+
 form button{
 
         display: block;
@@ -300,6 +321,10 @@ form button{
     flex-direction: column;
     gap:1rem;
     align-content: center;
+}
+
+.view-buttons-large{
+    display: none;
 }
 
 @media  only screen and (min-width:768px){
@@ -437,6 +462,62 @@ footer hr{
 
 @media  only screen and (min-width:1440px){
 
+    .view-buttons{
+        display: none;
+    }
 
+    .project-img-div{
+        position: relative;
+    }
+
+
+
+.view-buttons-large{
+    opacity: 0;
+    position: absolute;
+ display: flex;
+ flex-direction: column;
+         width: 100%;
+        height: 100%;
+        z-index: 5;
+        top: 0;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        padding:8rem;
+        transition: all 0.3s ease-out;
+}
+
+    .view-buttons-large button{
+        width: fit-content;
+        margin: auto;
+    }
+
+.view-buttons-large:hover{
+    opacity: 1;
+}
+
+/*     .big-text{
+        font-size: 5.5rem;
+
+    } */
+
+.form-container{
+    display: flex;
+    padding-right: 5rem;
+}
+
+.form-text{
+    padding-top:5rem;
+}
+
+.form-text p{
+ display: block;
+ text-align: left;
+ margin-left: 5rem;
+}
+
+.social-icon{
+    width: 25px;
+    height: 25px;
+}
 
 }
