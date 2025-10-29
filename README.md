@@ -65,7 +65,7 @@ Users should be able to:
 I guess the main points here are:
 
 - I used CSS filter for the first time.
-- I wired the form to a node api which in turns sends the entries to a database and also by email.
+- I wired the form to a node api which in turn sends the entries to a database and also by email.
 
 ### Continued development
 
