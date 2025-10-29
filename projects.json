@@ -1,0 +1,6 @@
+{
+    "name":"Password Generator",
+    "links":["https://github.com/faisalalmail/password-generator","https://password-generator-lac-three-34.vercel.app/"],
+    "img":"images/project-password-generator.png",
+    "teckstack": ["HTML","CSS","Javascript"]
+}

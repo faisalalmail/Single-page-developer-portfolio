@@ -39,7 +39,7 @@
   <p class="hero-text">Based in Bahrain, I'm a full-stack developer passionate about 
   building accessible web apps that users love.</p>
 
-  <button>Contact me</button>
+  <button onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">Contact me</button>
   </div>
   </div>
 
@@ -76,7 +76,7 @@
   <div class="projects-head">
   <p class="big-text">Projects</p>
 
-  <button>Contact me</button>
+  <button onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">Contact me</button>
 </div>
 <div class="projects-grid">
 <div class="project">
@@ -205,9 +205,12 @@
   <p class="foot-text">I would love to hear about your project and how I could help. Please 
   fill in the form, and I’ll get back to you as soon as possible.</p>
       </div>
-<form id="contact-form">
+<form id="contact-form" novalidate>
   <input type="text" name="name" id="name" placeholder="NAME">
-  <input type="text" name="email" id="email" placeholder="EMAIL">
+  <div class="email-div">
+  <input type="email" name="email" id="email" placeholder="EMAIL" class="email">
+    <div class="email-error" id="email-error">Sorry, invalid email</div>
+</div>
   <textarea placeholder="MESSAGE" name="message" id="message"></textarea>
 
   <button>Send message</button>
