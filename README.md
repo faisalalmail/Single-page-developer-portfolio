@@ -36,9 +36,9 @@ Users should be able to:
 
 **Screenshots to be added**
 
-![mobile view](screenshots/mobile.png)
-![Tablet view](screenshots/tablet.png)
-![Desktop view](screenshots/desktop.png)
+![mobile view](Screenshots/mobile.png)
+![Tablet view](Screenshots/tablet.png)
+![Desktop view](Screenshots/desktop.png)
 
 
 ### Links
