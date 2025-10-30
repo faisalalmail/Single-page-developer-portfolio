@@ -8,4 +8,9 @@
     "links":["https://github.com/faisalalmail/social-links-profile","https://social-links-profile-ten-vert.vercel.app/"],
     "img":"images/project-social-links.png",
     "techstack": "HTML CSS"
+},{
+    "name":"Movie Watchlish",
+    "links":["https://github.com/faisalalmail/Movie-watchlist","https://stellar-kashata-024dc1.netlify.app/"],
+    "img":"images/project-movie-watchlist.png",
+    "techstack": "HTML CSS Javascript"
 }]
