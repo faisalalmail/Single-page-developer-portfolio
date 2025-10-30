@@ -311,7 +311,7 @@ form button{
 
      display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+/*     grid-template-rows: repeat(6, 1fr); */
     grid-column-gap: 0px;
     grid-row-gap: 2.5rem;
 
@@ -443,7 +443,7 @@ h2{
 
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3, 1fr);
+ /*    grid-template-rows: repeat(3, 1fr); */
     grid-column-gap: 2.375rem;
     grid-row-gap: 3.75rem;
 
