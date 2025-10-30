@@ -72,7 +72,7 @@ I guess the main points here are:
 **Features to add:**
 - Replace the dummy projects to my actual projects.
 - Load the projects from a JSON file instead of hardcoding them.
-- work on data validation in the form with error handling and probably adding a capcha.
+- ~~work on data validation in the form with error handling~~ and probably adding a capcha.
 
 **Maybe**
 - Add a blog section

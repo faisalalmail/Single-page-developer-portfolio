@@ -1,6 +1,11 @@
-{
+[{
     "name":"Password Generator",
     "links":["https://github.com/faisalalmail/password-generator","https://password-generator-lac-three-34.vercel.app/"],
     "img":"images/project-password-generator.png",
-    "teckstack": ["HTML","CSS","Javascript"]
-}
+    "techstack": "HTML CSS Javascript"
+},{
+    "name":"Social links profile",
+    "links":["https://github.com/faisalalmail/social-links-profile","https://social-links-profile-ten-vert.vercel.app/"],
+    "img":"images/project-social-links.png",
+    "techstack": "HTML CSS"
+}]

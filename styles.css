@@ -23,6 +23,11 @@
 
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Utility classes */
 .flex{
     display: flex;
@@ -162,7 +167,7 @@ button{
 
 }
 
-button:hover{
+button:hover,button:active{
     cursor: pointer;
     color: hsl(var(--green));
 }
@@ -524,7 +529,10 @@ footer hr{
         width: fit-content;
         margin: auto;
     }
-
+    
+    .view-buttons-large a{
+        margin: auto;
+    }
 .view-buttons-large:hover{
     opacity: 1;
 }
