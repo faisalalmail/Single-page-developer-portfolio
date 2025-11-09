@@ -13,4 +13,9 @@
     "links":["https://github.com/faisalalmail/Movie-watchlist","https://stellar-kashata-024dc1.netlify.app/"],
     "img":"images/project-movie-watchlist.png",
     "techstack": "HTML CSS Javascript"
+},{
+    "name":"Space tourism website",
+    "links":["https://github.com/faisalalmail/Space-tourism-website","https://teal-moonbeam-b41fb5.netlify.app/"],
+    "img":"images/project-space-tourism.png",
+    "techstack": "HTML CSS Javascript"
 }]
