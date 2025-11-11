@@ -18,4 +18,9 @@
     "links":["https://github.com/faisalalmail/Space-tourism-website","https://teal-moonbeam-b41fb5.netlify.app/"],
     "img":"images/project-space-tourism.png",
     "techstack": "HTML CSS Javascript"
+},{
+    "name":"Galleria Slideshow Site",
+    "links":["https://github.com/faisalalmail/Galleria-slideshow-site","https://zesty-sundae-bddc37.netlify.app/"],
+    "img":"images/project-galleria.png",
+    "techstack": "HTML CSS Javascript"
 }]
