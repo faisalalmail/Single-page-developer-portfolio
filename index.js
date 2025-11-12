@@ -4,7 +4,7 @@ const projects = document.getElementById("projects-grid")
 
 
 
-/* contactForm.addEventListener("submit", function (e){
+contactForm.addEventListener("submit", function (e){
     e.preventDefault()
 
     console.log(e.target.name.value)
@@ -37,7 +37,7 @@ if ((e.target.email.value).includes('@') & (e.target.email.value).includes('.'))
 }
 
 
-}) */
+})
         
 /*         , { method: 'POST',
         headers: {'Content-Type': 'application/json'},
